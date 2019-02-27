@@ -10,13 +10,13 @@ namespace ConsoleApp2.Db
             {
                 Console.WriteLine("enter movie title");
                 string title = Console.ReadLine();
-                Console.WriteLine("enter movie realised year");
+                Console.WriteLine("enter the release year:");
                 string year = Console.ReadLine();
-                Console.WriteLine("enter movie category_name");
+                Console.WriteLine("enter movie category_name:");
                 string category_name = Console.ReadLine();
-                db.Movies.Add(new Movietbl { title = "vimpire d'iarises" });
+                db.Movies.Add(new Movietbl { title = "Seburikoko" });
                 db.Movies.Add(new Movietbl { year = "2019" });
-                db.Movies.Add(new Movietbl { category_name = "vimpire d'iarises" });
+                db.Movies.Add(new Movietbl { category_name = "Commedy" });
                 var count = db.SaveChanges();
                 Console.WriteLine("{0} records saved to database", count);
 
